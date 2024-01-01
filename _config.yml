@@ -22,7 +22,7 @@ minify: false
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  #head: source/_data/head.swig
+  head: source/_data/head.swig
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
   #postMeta: source/_data/post-meta.swig
@@ -57,14 +57,14 @@ footer:
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    name: fa-regular fa-closed-captioning
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#000000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: 2023 © Howard
+  copyright: Howard - 轉載文章請附上原文連結
 
   # Powered by Hexo & NexT
   powered: false
@@ -118,10 +118,10 @@ darkmode: false
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  about: /about/ || fa fa-user
-  tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa-regular fa-address-book
+  #  archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -129,8 +129,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true
-
+  badges: false
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -169,7 +168,7 @@ avatar:
   rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
-
+  opacity: 1
 # Posts / Categories / Tags in sidebar.
 site_state: true
 
@@ -256,7 +255,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
@@ -381,7 +380,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
